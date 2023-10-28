@@ -147,6 +147,159 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/28/cpp/c++14%20feature/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Qian">
+      <meta itemprop="description" content="Stay optimistic and positive">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Life Love Lemon">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/28/cpp/c++14%20feature/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-28 00:00:00 / 修改时间：15:33:41" itemprop="dateCreated datePublished" datetime="2023-10-28T00:00:00+08:00">2023-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/cpp/" itemprop="url" rel="index"><span itemprop="name">cpp</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/28/Golang/01.%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Qian">
+      <meta itemprop="description" content="Stay optimistic and positive">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Life Love Lemon">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/28/Golang/01.%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" class="post-title-link" itemprop="url">配置开发环境</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-28 00:00:00 / 修改时间：23:06:33" itemprop="dateCreated datePublished" datetime="2023-10-28T00:00:00+08:00">2023-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Golang/" itemprop="url" rel="index"><span itemprop="name">Golang</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">操作系统：Ubuntu 22.04</span><br><span class="line">golang 版本：1.21</span><br></pre></td></tr></table></figure>
+<h2 id="step1-下载golang"><a href="#step1-下载golang" class="headerlink" title="step1 下载golang"></a>step1 下载golang</h2><p>进入<a target="_blank" rel="noopener" href="https://golang.google.cn/dl/">官网</a>或者其他镜像网站下载所需压缩包（自己找吧）</p>
+<h2 id="step2-解压"><a href="#step2-解压" class="headerlink" title="step2 解压"></a>step2 解压</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -C /usr/local -xzf go1.x.x.linux-amd64.tar.gz  </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可以根据自己喜好将路径/usr/local 替换</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="step3-配置环境变量"><a href="#step3-配置环境变量" class="headerlink" title="step3 配置环境变量"></a>step3 配置环境变量</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc  #别和我说你用ubuntu不会vim</span><br></pre></td></tr></table></figure>
+<p>添加如下语句：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/usr/local/go/bin</span><br><span class="line"># 同理，路径自己换</span><br></pre></td></tr></table></figure>
+
+
+<p>在Terminal中检验：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go version</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go version go1.21.3 linux/amd64</span><br></pre></td></tr></table></figure>
+
+<h2 id="step4-配置vscode开发环境"><a href="#step4-配置vscode开发环境" class="headerlink" title="step4 配置vscode开发环境"></a>step4 配置vscode开发环境</h2><h4 id="1-安装GO插件"><a href="#1-安装GO插件" class="headerlink" title="1. 安装GO插件"></a>1. 安装GO插件</h4><p>在插件市场中搜索下载即可</p>
+<h4 id="2-更改下载源，下载额外module"><a href="#2-更改下载源，下载额外module" class="headerlink" title="2. 更改下载源，下载额外module"></a>2. 更改下载源，下载额外module</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启用 Go Modules 功能</span></span><br><span class="line">go env -w GO111MODULE=on</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">配置 GOPROXY 环境变量</span></span><br><span class="line">go env -w  GOPROXY=https://goproxy.cn,direct</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看</span></span><br><span class="line">go env | grep GOPROXY</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">--&gt; </span><span class="language-bash">GOPROXY=<span class="string">&quot;https://goproxy.cn&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-在vscode中下载module"><a href="#3-在vscode中下载module" class="headerlink" title="3.在vscode中下载module"></a>3.在vscode中下载module</h4><p>打开vscode，按下：ctrl+shift+p<br>选择go：install&#x2F;update<br>选择所有附件安装</p>
+<h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>在vscode中，可以直接使用 F5进行调试，网上说是</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/24/CV/opencv/opencv01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -271,7 +424,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-27 19:19:20" itemprop="dateModified" datetime="2023-10-27T19:19:20+08:00">2023-10-27</time>
+                <time title="修改时间：2023-10-28 16:32:34" itemprop="dateModified" datetime="2023-10-28T16:32:34+08:00">2023-10-28</time>
               </span>
 
           
@@ -288,12 +441,32 @@
           <p>我的计划其实就对应这我的学习路线，当我在不同阶段，对某项技术有了不同的认知，我常常会制定不同的学习计划，这也让我能摆脱迷茫，永远向前。</p>
 <ul>
 <li><p><input disabled="" type="checkbox"> 
-学习UML  ——2023.09.18<br>由于我选了一门CV设计课程,因此后续学习优先偏向ai方向,空余时间学习cs开发方向</p>
+Golang 精通</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
-彻底掌握一门语言（我选择C++)</p>
+算法持续学习</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+学习UML  ——2023.09.18<br>由于我选了一门CV设计课程,因此后续学习优先偏向ai方向,空余时间学习cs开发方向</p>
 </li>
 </ul>
+<hr>
+<p>2023.10.28<br>被学校的AI课程打败了，项目难以落地，大二的我深感迷茫。<br>我决定在本科阶段还是老老实实地走传统计科方向，毕竟目前ai还是在探索期。<br>但当我真正开始学习的时候又深感迷茫，为此我决定从企业招聘的角度来学习。<br>收集到的企业需求如下：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 软件工程知识</li>
+</ul>
+<ol>
+<li>DevOps   -<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/91371659">含义</a></li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> DT框架</li>
+<li><input disabled="" type="checkbox"> C++服务端</li>
+<li><input disabled="" type="checkbox"> 基本素养：</li>
+</ul>
+<ol>
+<li>CleanCode</li>
+<li>….</li>
+</ol>
 
       
     </div>
@@ -387,73 +560,6 @@
 
 
 
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/16/cpp/coding_stle/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chen Qian">
-      <meta itemprop="description" content="Stay optimistic and positive">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Life Love Lemon">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/16/cpp/coding_stle/" class="post-title-link" itemprop="url">Cpp coding style</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-16 00:00:00 / 修改时间：17:18:01" itemprop="dateCreated datePublished" datetime="2023-09-16T00:00:00+08:00">2023-09-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/cpp/" itemprop="url" rel="index"><span itemprop="name">cpp</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
       
     </div>
 
@@ -620,12 +726,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span>
       </div>
   </nav>

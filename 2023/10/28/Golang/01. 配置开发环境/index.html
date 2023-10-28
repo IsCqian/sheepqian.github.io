@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="我的计划其实就对应这我的学习路线，当我在不同阶段，对某项技术有了不同的认知，我常常会制定不同的学习计划，这也让我能摆脱迷茫，永远向前。    Golang 精通    算法持续学习    学习UML  ——2023.09.18由于我选了一门CV设计课程,因此后续学习优先偏向ai方向,空余时间学习cs开发方向    2023.10.28被学校的AI课程打败了，项目难以落地，大二的我深感迷茫。我决定在">
+  <meta name="description" content="12操作系统：Ubuntu 22.04golang 版本：1.21 step1 下载golang进入官网或者其他镜像网站下载所需压缩包（自己找吧） step2 解压12sudo tar -C &#x2F;usr&#x2F;local -xzf go1.x.x.linux-amd64.tar.gz  #可以根据自己喜好将路径&#x2F;usr&#x2F;local 替换  step3 配置环境变量1vim ~&#x2F;.bashrc  #别和我说">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My Target">
-<meta property="og:url" content="http://example.com/2023/09/18/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87/index.html">
+<meta property="og:title" content="配置开发环境">
+<meta property="og:url" content="http://example.com/2023/10/28/Golang/01.%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/index.html">
 <meta property="og:site_name" content="Life Love Lemon">
-<meta property="og:description" content="我的计划其实就对应这我的学习路线，当我在不同阶段，对某项技术有了不同的认知，我常常会制定不同的学习计划，这也让我能摆脱迷茫，永远向前。    Golang 精通    算法持续学习    学习UML  ——2023.09.18由于我选了一门CV设计课程,因此后续学习优先偏向ai方向,空余时间学习cs开发方向    2023.10.28被学校的AI课程打败了，项目难以落地，大二的我深感迷茫。我决定在">
+<meta property="og:description" content="12操作系统：Ubuntu 22.04golang 版本：1.21 step1 下载golang进入官网或者其他镜像网站下载所需压缩包（自己找吧） step2 解压12sudo tar -C &#x2F;usr&#x2F;local -xzf go1.x.x.linux-amd64.tar.gz  #可以根据自己喜好将路径&#x2F;usr&#x2F;local 替换  step3 配置环境变量1vim ~&#x2F;.bashrc  #别和我说">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-28T08:32:34.313Z">
+<meta property="article:published_time" content="2023-10-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-28T15:06:33.774Z">
 <meta property="article:author" content="Chen Qian">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2023/09/18/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87/">
+<link rel="canonical" href="http://example.com/2023/10/28/Golang/01.%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>My Target | Life Love Lemon</title>
+  <title>配置开发环境 | Life Love Lemon</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/18/%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/28/Golang/01.%20%E9%85%8D%E7%BD%AE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          My Target
+          配置开发环境
         </h1>
 
         <div class="post-meta">
@@ -172,16 +172,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-09-18 00:00:00" itemprop="dateCreated datePublished" datetime="2023-09-18T00:00:00+08:00">2023-09-18</time>
+              <time title="创建时间：2023-10-28 00:00:00 / 修改时间：23:06:33" itemprop="dateCreated datePublished" datetime="2023-10-28T00:00:00+08:00">2023-10-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-28 16:32:34" itemprop="dateModified" datetime="2023-10-28T16:32:34+08:00">2023-10-28</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Golang/" itemprop="url" rel="index"><span itemprop="name">Golang</span></a>
+                </span>
+            </span>
 
           
 
@@ -194,35 +197,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>我的计划其实就对应这我的学习路线，当我在不同阶段，对某项技术有了不同的认知，我常常会制定不同的学习计划，这也让我能摆脱迷茫，永远向前。</p>
-<ul>
-<li><p><input disabled="" type="checkbox"> 
-Golang 精通</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-算法持续学习</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-学习UML  ——2023.09.18<br>由于我选了一门CV设计课程,因此后续学习优先偏向ai方向,空余时间学习cs开发方向</p>
-</li>
-</ul>
-<hr>
-<p>2023.10.28<br>被学校的AI课程打败了，项目难以落地，大二的我深感迷茫。<br>我决定在本科阶段还是老老实实地走传统计科方向，毕竟目前ai还是在探索期。<br>但当我真正开始学习的时候又深感迷茫，为此我决定从企业招聘的角度来学习。<br>收集到的企业需求如下：</p>
-<ul>
-<li><input disabled="" type="checkbox"> 软件工程知识</li>
-</ul>
-<ol>
-<li>DevOps   -<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/91371659">含义</a></li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"> DT框架</li>
-<li><input disabled="" type="checkbox"> C++服务端</li>
-<li><input disabled="" type="checkbox"> 基本素养：</li>
-</ul>
-<ol>
-<li>CleanCode</li>
-<li>….</li>
-</ol>
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">操作系统：Ubuntu 22.04</span><br><span class="line">golang 版本：1.21</span><br></pre></td></tr></table></figure>
+<h2 id="step1-下载golang"><a href="#step1-下载golang" class="headerlink" title="step1 下载golang"></a>step1 下载golang</h2><p>进入<a target="_blank" rel="noopener" href="https://golang.google.cn/dl/">官网</a>或者其他镜像网站下载所需压缩包（自己找吧）</p>
+<h2 id="step2-解压"><a href="#step2-解压" class="headerlink" title="step2 解压"></a>step2 解压</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -C /usr/local -xzf go1.x.x.linux-amd64.tar.gz  </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">可以根据自己喜好将路径/usr/local 替换</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="step3-配置环境变量"><a href="#step3-配置环境变量" class="headerlink" title="step3 配置环境变量"></a>step3 配置环境变量</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc  #别和我说你用ubuntu不会vim</span><br></pre></td></tr></table></figure>
+<p>添加如下语句：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/usr/local/go/bin</span><br><span class="line"># 同理，路径自己换</span><br></pre></td></tr></table></figure>
+
+
+<p>在Terminal中检验：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go version</span><br></pre></td></tr></table></figure>
+<p>输出如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go version go1.21.3 linux/amd64</span><br></pre></td></tr></table></figure>
+
+<h2 id="step4-配置vscode开发环境"><a href="#step4-配置vscode开发环境" class="headerlink" title="step4 配置vscode开发环境"></a>step4 配置vscode开发环境</h2><h4 id="1-安装GO插件"><a href="#1-安装GO插件" class="headerlink" title="1. 安装GO插件"></a>1. 安装GO插件</h4><p>在插件市场中搜索下载即可</p>
+<h4 id="2-更改下载源，下载额外module"><a href="#2-更改下载源，下载额外module" class="headerlink" title="2. 更改下载源，下载额外module"></a>2. 更改下载源，下载额外module</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启用 Go Modules 功能</span></span><br><span class="line">go env -w GO111MODULE=on</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">配置 GOPROXY 环境变量</span></span><br><span class="line">go env -w  GOPROXY=https://goproxy.cn,direct</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看</span></span><br><span class="line">go env | grep GOPROXY</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">--&gt; </span><span class="language-bash">GOPROXY=<span class="string">&quot;https://goproxy.cn&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-在vscode中下载module"><a href="#3-在vscode中下载module" class="headerlink" title="3.在vscode中下载module"></a>3.在vscode中下载module</h4><p>打开vscode，按下：ctrl+shift+p<br>选择go：install&#x2F;update<br>选择所有附件安装</p>
+<h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>在vscode中，可以直接使用 F5进行调试，网上说是</p>
 
     </div>
 
@@ -238,12 +231,12 @@ Golang 精通</p>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/09/16/cpp/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/" rel="prev" title="基础知识回顾">
-      <i class="fa fa-chevron-left"></i> 基础知识回顾
+    <a href="/2023/09/24/CV/opencv/opencv01/" rel="prev" title="The first class of Opencv-python">
+      <i class="fa fa-chevron-left"></i> The first class of Opencv-python
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/09/24/CV/opencv/opencv01/" rel="next" title="The first class of Opencv-python">
-      The first class of Opencv-python <i class="fa fa-chevron-right"></i>
+    <a href="/2023/10/28/cpp/c++14%20feature/" rel="next" title="">
+       <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -303,6 +296,7 @@ Golang 精通</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step1-%E4%B8%8B%E8%BD%BDgolang"><span class="nav-number">1.</span> <span class="nav-text">step1 下载golang</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step2-%E8%A7%A3%E5%8E%8B"><span class="nav-number">2.</span> <span class="nav-text">step2 解压</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step3-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">step3 配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step4-%E9%85%8D%E7%BD%AEvscode%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-number">4.</span> <span class="nav-text">step4 配置vscode开发环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85GO%E6%8F%92%E4%BB%B6"><span class="nav-number">4.0.1.</span> <span class="nav-text">1. 安装GO插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%9B%B4%E6%94%B9%E4%B8%8B%E8%BD%BD%E6%BA%90%EF%BC%8C%E4%B8%8B%E8%BD%BD%E9%A2%9D%E5%A4%96module"><span class="nav-number">4.0.2.</span> <span class="nav-text">2. 更改下载源，下载额外module</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%9C%A8vscode%E4%B8%AD%E4%B8%8B%E8%BD%BDmodule"><span class="nav-number">4.0.3.</span> <span class="nav-text">3.在vscode中下载module</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#END"><span class="nav-number">5.</span> <span class="nav-text">END</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
